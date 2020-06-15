@@ -1,7 +1,7 @@
 FROM composer
 
-RUN composer global require "squizlabs/php_codesniffer=*"
-
 WORKDIR /app
+
+RUN composer global require "squizlabs/php_codesniffer=*"
 
 CMD ["composer"]
